@@ -20,6 +20,8 @@ img {
    position: relative;
    right:9%;
    border-radius: 20px;
+   border-color: yellow;
+   border-style: solid;
 }
 h1 {
    color: white;
@@ -32,12 +34,16 @@ p {
   height: 225px;
 }
 h2 {
-   color: yellow;
+   color: red;
    font-size: 20px
    padding: 5px;
 
-p1 {
-  color: pink;
-   font-size: 20px;
-
-    pad
+div {
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
