@@ -1,49 +1,48 @@
 
+.card {
+    border: 1px solid #ccc; /* Рамка вокруг карточки */
+    border-radius: 8px; /* Закругленные углы */
+    overflow: hidden; /* Скрыть содержимое, выходящее за рамки карточки */
+    transition: transform 0.3s; /* Плавный переход для трансформации */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для карточки */
+    max-width: 300px; /* Максимальная ширина карточки */
+    margin: 20px; /* Отступы вокруг карточки */
+    background-color: blue;
+}
 
-.card{
-   width: 400px;
-   height: 1020px;
-   background-color: blue;
-   border-radius: 60px;
+/* Стили для фото */
+.photo img {
+    width: 100%; /* Ширина изображения 100% от родительского элемента */
+    height: auto; /* Высота автоматически */
 }
-.photo {
-   height: 40%;
-   padding: 40px;
-   # padding - это внутренний отступ
-   # Для внешних отступов используется margin
+
+/* Эффект при наведении на карточку */
+.card:hover {
+    transform: scale(1.05); /* Увеличение карточки при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Увеличение тени при наведении */
 }
+
+/* Стили для информации */
 .info {
-   padding: 40px;
-   height: 10000px;
+    padding: 16px; /* Отступы внутри карточки */
+    background-color: blue; /* Цвет фона для информации */
 }
-img {
-   position: relative;
-   right:9%;
-   border-radius: 20px;
-   border-color: yellow;
-   border-style: solid;
-}
+
+/* Заголовки */
 h1 {
-   color: white;
-   padding: 5px;
+    font-size: 24px; /* Размер шрифта для заголовка */
+    margin: 0; /* Убираем отступы */
+    color: white;
+}
 
-}
-p {
-  color: yellow;
-  padding: 5px;
-  height: 225px;
-}
 h2 {
-   color: red;
-   font-size: 20px
-   padding: 5px;
+    font-size: 18px; /* Размер шрифта для подзаголовка */
+    color: lightgreen; /* Цвет текста для подзаголовка */
+    margin: 10px 0 0; /* Отступы для подзаголовка */
+}
 
-div {
-    width: 100px;
-    height: 100px;
-    background-color: deeppink;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 100px;
-    right: 100px;
+/* Параграф */
+p {
+    color: yellow;/* Цвет текста абзаца */
+    line-height: 1.5; /* Межстрочный интервал */
 }
